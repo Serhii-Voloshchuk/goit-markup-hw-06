@@ -38,11 +38,11 @@
             <li><a class="link-header" href="">Portfolio</a></li>
             <li><a class="link-header" href="">Contacts</a></li>
           </ul>
-          <div class="humberger">
+          <button class="humberger" type="button">
             <svg class="humburger-icon" width="16" height="14">
               <use href="./images/icons.svg#icon-Humburger"></use>
             </svg>
-                    </div>
+          </button>
         </nav>
         <address class="address">
           <ul class="address-title">
@@ -58,6 +58,66 @@
             </li>
           </ul>
         </address>
+        <div class="moda-mobile">
+          <div class="nav-modal-mobile">
+            <button class="button-element button-nav-mobile" type="button">
+              <svg class="button-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+              </button>
+  <ul class="nav-list-mobile">
+    <li class="link-header-mobile"><a href="">Studio</a></li>
+    <li class="link-header-mobile"><a href="">Portfolio</a></li>
+    <li class="link-header-mobile"><a href="">Contacts</a></li>
+  </ul>
+  <address class="address-mobile">
+  <ul class="address-title-mobile">
+    <li>
+      <a class="address-link-mobile" href="mailto:info@devstudio.com"
+        >info@devstudio.com</a
+      >
+    </li>
+    <li>
+      <a class="address-link-mobile" href="tel:+110001111111"
+        >+11 (000) 111-11-11</a
+      >
+    </li>
+  </ul>
+  </ul>
+  </address>
+  <ul class="social-media-icons mobile">
+    <li class="social-media-item">
+      <a href="" class="social-media-icons-footer">
+        <svg class="social-media-svg" width="24" height="24">
+          <use href="./images/icons.svg#icon-instagram"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social-media-item">
+      <a href="" class="social-media-icons-footer">
+        <svg class="social-media-svg" width="24" height="24">
+          <use href="./images/icons.svg#icon-twitte"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social-media-item">
+      <a href="" class="social-media-icons-footer">
+        <svg class="social-media-svg" width="24" height="24">
+          <use href="./images/icons.svg#icon-facebook"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social-media-item">
+      <a href="" class="social-media-icons-footer">
+        <svg class="social-media-svg" width="24" height="24">
+          <use href="./images/icons.svg#icon-linkedin"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+  
+          </div>
+        </div>
         
       </div>
     </header>
@@ -287,7 +347,12 @@
           <ul class="project-list">
             <li class="project-list-point">
               <div class="project-list-point-image">
-                <img class="our-portfolio-img" src="./images/img-9.jpg" alt="banking-app" width="360" />
+                <img
+                  class="our-portfolio-img"
+                  src="./images/img-9.jpg"
+                  alt="banking-app"
+                  width="360"
+                />
                 <p class="project-list-point-paragraph">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -301,7 +366,8 @@
             </li>
             <li class="project-list-point">
               <div class="project-list-point-image">
-                <img class="our-portfolio-img"
+                <img
+                  class="our-portfolio-img"
                   src="./images/img-8.jpg"
                   alt="cashless-payment"
                   width="360"
@@ -319,7 +385,8 @@
             </li>
             <li class="project-list-point">
               <div class="project-list-point-image">
-                <img class="our-portfolio-img"
+                <img
+                  class="our-portfolio-img"
                   src="./images/img-7.jpg"
                   alt="meditation-app"
                   width="360"
@@ -337,7 +404,12 @@
             </li>
             <li class="project-list-point">
               <div class="project-list-point-image">
-                <img class="our-portfolio-img" src="./images/img-6.jpg" alt="taxi-service" width="360" />
+                <img
+                  class="our-portfolio-img"
+                  src="./images/img-6.jpg"
+                  alt="taxi-service"
+                  width="360"
+                />
                 <p class="project-list-point-paragraph">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -351,7 +423,8 @@
             </li>
             <li class="project-list-point">
               <div class="project-list-point-image">
-                <img class="our-portfolio-img"
+                <img
+                  class="our-portfolio-img"
                   src="./images/img-5.jpg"
                   alt="screen-illustrations"
                   width="360"
@@ -369,7 +442,8 @@
             </li>
             <li class="project-list-point">
               <div class="project-list-point-image">
-                <img class="our-portfolio-img"
+                <img
+                  class="our-portfolio-img"
                   src="./images/img-4.jpg"
                   alt="online-courses"
                   width="360"
@@ -457,7 +531,7 @@
     </footer>
     <div class="modal-overlay">
       <div class="modal">
-        <button class="button-element" type="button">
+        <button class="button-element button-modal" type="button">
           <svg class="button-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -528,12 +602,14 @@
             />
             <label class="checkbox-label" for="user-privacy">
               <span class="checkbox-container">
-                <svg width="10" height="8">
+                <svg class="checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-Chek"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="privacy-policy-link" href=""> Privacy Policy</a>
+              <span class="checkbox-text">
+                I accept the terms and conditions of the
+                <a class="privacy-policy-link" href=""> Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button class="button" type="submit">Send</button>
