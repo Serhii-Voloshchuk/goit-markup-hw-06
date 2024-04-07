@@ -566,7 +566,7 @@ section:nth-child(3) {
   background-color: #f4f4fd;
   display: flex;
   text-align: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 240px;
 }
 
@@ -763,7 +763,7 @@ section:nth-child(3) {
 .project-list {
   display: flex;
   flex-direction: column;
-  row-gap: 48px;
+  column-gap: 48px;
 }
 
 .project-list-point{
@@ -1690,22 +1690,37 @@ color: #434455;
 /* ===============Section 2============ */
 
 .list-qualities {
+  display: block;
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-row-gap: 24px;
-column-gap: 72px;
+  width: calc((100% - 24px) / 2); 
+  /* не работает!! */
+
 
 }
 
 
 .list-qualities-point{
   display: block;
-  max-width: 356px;
+
 }
 
+.team-list{
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  column-gap: 64px;
+  box-sizing: border-box;
 
+}
 
+.project-list{
+  flex-direction: row;
+}
 
+.project-list-point{
+  display: block;
+}
 
 }
