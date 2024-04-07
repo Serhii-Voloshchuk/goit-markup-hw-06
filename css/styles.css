@@ -35,7 +35,7 @@ img {
 }
 
 .container{
-  max-width:320px;
+  width:320px;
   margin: auto;
   padding-left: 16px;
   padding-right: 16px;
@@ -246,7 +246,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 72px 16px 16px 16px;
-    position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -327,8 +327,7 @@ font-style: normal;
   max-width: 762px;
   padding-top: 76px;
   padding-bottom: 76px;
-  padding-right: 52px;
-  padding-left: 52px;
+margin: o auto;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
@@ -561,10 +560,11 @@ section:nth-child(3) {
 
 section:nth-child(3) {
   background-color: #f4f4fd;
-  display: flex;
+  align-items: center;
   text-align: center;
+
   /* flex-direction: column; */
-  gap: 240px;
+  /* gap: 240px; */
 }
 
 .our-team-title {
@@ -577,10 +577,11 @@ section:nth-child(3) {
 }
 
 .team-list {
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
+
   align-items: center;
+  margin-bottom: 72px;
+  
+  
 }
 
 .person-card {
@@ -589,7 +590,9 @@ section:nth-child(3) {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    max-width: 264px;
+    width: 264px;
+ 
+    
 }
 
 .title-qualities-name{
@@ -1573,9 +1576,15 @@ align-items: center;
   color: #4D5AE5;
 } */
 
-@media (min-width: 768px) and (max-width:1157px) {
+
+
+@media screen and (min-width: 768px) and (max-width:1157px) {
 
 /* =========================HEADER=========================== */
+
+.container{
+  width: 768px;
+}
 
   .header .container {
     display: flex;
@@ -1689,16 +1698,17 @@ color: #434455;
 
 .list-qualities {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  gap: 24px 72px;
+  gap: 72px 24px;
   flex-wrap: wrap;
 
   }
 
-  /* .list-qualities-point{
+  .list-qualities-point{
 
-    flex-basis: calc((100% - 24px) / 2); 
-  } */
+    width: calc((100% - 24px) / 2); 
+  }
 
 
 /* ===============Section 3============ */
@@ -1706,23 +1716,28 @@ color: #434455;
 
 
 .team-list{
+  display: flex;
   flex-direction: row;
+  justify-content: center;
+  gap: 64px 24px;
   flex-wrap: wrap;
-  width: calc((100% - 24px) / 2); 
 
 }
+
 
 
 /* ===============Section 4============ */
 
 
 .project-list{
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 72px 24px;
 }
 
 .project-list-point{
-  display: block;
+  width: calc((100% - 24px) / 2);
 }
 
 
