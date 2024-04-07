@@ -35,8 +35,7 @@ img {
 }
 
 .container{
-  width: 100%;
-  max-width: 767px;
+  max-width:320px;
   margin: auto;
   padding-left: 16px;
   padding-right: 16px;
@@ -446,10 +445,8 @@ font-style: normal;
   display:none;
 }
 
-.list-qualities {
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
+.list-qualities-point {
+margin-bottom: 72px;
 }
 
 .title-qualities {
@@ -1677,7 +1674,7 @@ color: #434455;
 ===============Section 1=========== */
 
 .section{
-  max-width: 1157px;
+  max-width: 768px;
   margin-left: auto;
   margin-right: auto;
   padding: 112px 0px;
@@ -1691,16 +1688,17 @@ color: #434455;
 /* ===============Section 2============ */
 
 .list-qualities {
-  display: block;
+  display: flex;
   justify-content: center;
-  flex-direction: row;
+  gap: 24px 72px;
   flex-wrap: wrap;
+
   }
 
-  .list-qualities-point{
+  /* .list-qualities-point{
 
     flex-basis: calc((100% - 24px) / 2); 
-  }
+  } */
 
 
 /* ===============Section 3============ */
